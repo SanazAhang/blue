@@ -1,4 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="headerSectionButton" parent="ShapeAppearanceOverlay.Material3.Button">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:drawableTint">?attr/iconColor</item>
+    </style>
+
+    <style name="circleButtonTransParent" parent="ShapeAppearanceOverlay.Material3.Button">
+        <item name="android:backgroundTint">@color/white_with_transparent</item>
+        <item name="android:drawableTint">?attr/iconColor</item>
+    </style>
+
+    <style name="circleButton" parent="ShapeAppearanceOverlay.Material3.Button">
+        <item name="android:backgroundTint">@color/white</item>
+<!--        <item name="android:iconTint">@color/blue</item>-->
+    </style>
+
+    <style name="headerSectionTitle" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">?attr/headerTextColor</item>
+        <item name="android:textSize">@dimen/font_large_24</item>
+    </style>
+
+    <style name="headerSection" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">?attr/headerTextColor</item>
+        <item name="android:textSize">@dimen/font_small_14</item>
+    </style>
 </resources>

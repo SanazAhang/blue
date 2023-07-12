@@ -4,8 +4,12 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="android:colorBackground">@color/white</item>
-<!--        <item name="android:windowTranslucentStatus">true</item>-->
-<!--        <item name="android:windowTranslucentNavigation">true</item>-->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="backDropImage">@drawable/header_light</item>
+        <item name="iconColor">@color/white</item>
+        <item name="headerTextColor">@color/white</item>
+        <item name="frontBackgroundColor">@color/white</item>
     </style>
 
     <style name="Theme.Blue" parent="Base.Theme.Blue" />

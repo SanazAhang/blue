@@ -139,7 +139,7 @@ class TransactionRepositoryImp() : TransactionRepository {
     }
 
     private fun createBalanceModel(): Flow<BalanceModel> {
-        val balance = BalanceModel(amount = "۹۲۰,۷۸۰,۳۴۴۵", currncy = "ریال")
+        val balance = BalanceModel(amount = "۹۲۰,۷۸۰", currncy = "ریال")
         return flowOf(balance)
     }
 

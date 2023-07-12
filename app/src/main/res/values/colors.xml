@@ -2,5 +2,32 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="white_with_transparent">#1BFFFFFF</color>
     <color name="blue">#21B6DC</color>
+    <color name="header_section_dark">#E7EAEF</color>
 </resources>
+
+
+<!--    Header Section:-->
+<!--    Texts ->-->
+<!--    Light = #FFFFFF-->
+<!--    Dark = #E7EAEF-->
+<!--    Icon Tints ->-->
+<!--    Light = #FFFFFF-->
+<!--    Dark = #E7EAEF-->
+<!--    Transactions Section:-->
+<!--    Background ->-->
+<!--    Light = #FFFFFF-->
+<!--    Dark = #1B2028-->
+<!--    Title Texts ->-->
+<!--    Light = #253035-->
+<!--    Dark = #E7EAEF-->
+<!--    Description Texts ->-->
+<!--    Light = #718E9C-->
+<!--    Dark = #9FABBE-->
+<!--    Price Texts ->-->
+<!--    Light = #253035-->
+<!--    Dark = #E7EAEF-->
+<!--    Highlights Tint ->-->
+<!--    Light = #C9EDE8-->
+<!--    Dark = #154641-->

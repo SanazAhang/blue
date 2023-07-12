@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="backDropImage" format="reference"/>
+    <attr name="iconColor" format="reference"/>
+    <attr name="headerTextColor" format="reference"/>
+    <attr name="headerFontFamily" format="reference"/>
+    <attr name="frontBackgroundColor" format="reference"/>
+</resources>

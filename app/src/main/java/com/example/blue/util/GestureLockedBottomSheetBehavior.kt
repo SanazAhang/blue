@@ -18,7 +18,7 @@ class GestureLockedBottomSheetBehavior<v : View>(context: Context, attributeSet:
     ): Boolean = false
 
     override fun onTouchEvent(parent: CoordinatorLayout, child: v, event: MotionEvent): Boolean =
-        false
+        true
 
     override fun onStartNestedScroll(
         coordinatorLayout: CoordinatorLayout,

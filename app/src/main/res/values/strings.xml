@@ -2,4 +2,9 @@
     <string name="app_name">blue</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_title">خانه</string>
+    <string name="box">باکس</string>
+    <string name="financialManagement">مدیریت مالی</string>
+    <string name="chargeAccount">شارژ حساب</string>
+    <string name="inventory">موجودی</string>
 </resources>
