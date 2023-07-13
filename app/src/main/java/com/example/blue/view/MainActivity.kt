@@ -81,7 +81,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun observeData() {
         viewModel.balance.observe(this) { balance ->
-            binding.balanceTextView.text = "${balance.currncy} ${balance.amount} "
+            binding.balanceTextView.text = " ${balance.amount} ${balance.currncy}"
         }
     }
 

@@ -13,16 +13,45 @@
 
     <style name="circleButton" parent="ShapeAppearanceOverlay.Material3.Button">
         <item name="android:backgroundTint">@color/white</item>
-<!--        <item name="android:iconTint">@color/blue</item>-->
     </style>
 
     <style name="headerSectionTitle" parent="Widget.AppCompat.TextView">
         <item name="android:textColor">?attr/headerTextColor</item>
         <item name="android:textSize">@dimen/font_large_24</item>
+        <item name="android:fontFamily">@font/iransans_bold</item>
     </style>
 
     <style name="headerSection" parent="Widget.AppCompat.TextView">
         <item name="android:textColor">?attr/headerTextColor</item>
         <item name="android:textSize">@dimen/font_small_14</item>
+        <item name="android:fontFamily">@font/iransans_bold</item>
     </style>
+
+    <style name="headerSectionBottonText" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">?attr/headerTextColor</item>
+        <item name="android:textSize">@dimen/font_x_small_12</item>
+        <item name="android:fontFamily">@font/iransans_medium</item>
+    </style>
+
+    <style name="description_title" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">?attr/descriptionItemTitleTextColor</item>
+        <item name="android:textSize">@dimen/font_small_14</item>
+        <item name="android:fontFamily">@font/iransans_medium</item>
+    </style>
+
+    <style name="description_date" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">?attr/descriptionItemTextColor</item>
+        <item name="android:textSize">@dimen/font_x_small_12</item>
+        <item name="android:fontFamily">@font/iransans_light</item>
+    </style>
+
+    <style name="description_price" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">?attr/descriptionItemPriceTextColor</item>
+        <item name="android:textSize">@dimen/font_small_14</item>
+        <item name="android:fontFamily">@font/iransans_medium</item>
+        <item name="android:backgroundTint">?attr/descriptionItemHighlight</item>
+
+    </style>
+
+
 </resources>

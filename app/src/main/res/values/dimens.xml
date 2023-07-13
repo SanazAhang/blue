@@ -37,7 +37,13 @@
     //toolbarSize
     <dimen name="toolBarHeight">88dp</dimen>
 
-  //toolbarSize
+  //iconSize
     <dimen name="iconSize">40dp</dimen>
+
+    //circleImageViewSize
+    <dimen name="circleImageViewSize">60dp</dimen>
+
+    //corner radius
+    <dimen name="imageViewCorner">30dp</dimen>
 
 </resources>

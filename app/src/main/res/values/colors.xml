@@ -5,29 +5,67 @@
     <color name="white_with_transparent">#1BFFFFFF</color>
     <color name="blue">#21B6DC</color>
     <color name="header_section_dark">#E7EAEF</color>
+
+    //DescriptionSection backGround
+    <color name="description_item_dark">#1B2028</color>
+
+    //DescriptionSection Title Texts
+    <color name="description_title_text_color_Light">#253035</color>
+    <color name="description_title_text_color_night">#E7EAEF</color>
+
+
+    //DescriptionSection Description Texts
+    <color name="description_text_color_Light">#718E9C</color>
+    <color name="description_text_color_night">#9FABBE</color>
+
+    //DescriptionSection Price Texts
+    <color name="description_price_text_color_Light">#253035</color>
+    <color name="description_price_text_color_night">#E7EAEF</color>
+
+    //DescriptionSection Highlights Tint
+    <color name="description_highlights_tint_color_Light">#C9EDE8</color>
+    <color name="description_highlights_tint_color_night">#154641</color>
+
+    //DescriptionSection iconBackground
+    <color name="description_icon_back_ground_light">#577A9ACF</color>
+    <color name="description_icon_back_ground_dark">#5713356C</color>
+
 </resources>
 
 
-<!--    Header Section:-->
-<!--    Texts ->-->
-<!--    Light = #FFFFFF-->
-<!--    Dark = #E7EAEF-->
-<!--    Icon Tints ->-->
-<!--    Light = #FFFFFF-->
-<!--    Dark = #E7EAEF-->
-<!--    Transactions Section:-->
-<!--    Background ->-->
-<!--    Light = #FFFFFF-->
-<!--    Dark = #1B2028-->
-<!--    Title Texts ->-->
-<!--    Light = #253035-->
-<!--    Dark = #E7EAEF-->
-<!--    Description Texts ->-->
-<!--    Light = #718E9C-->
-<!--    Dark = #9FABBE-->
-<!--    Price Texts ->-->
-<!--    Light = #253035-->
-<!--    Dark = #E7EAEF-->
-<!--    Highlights Tint ->-->
-<!--    Light = #C9EDE8-->
-<!--    Dark = #154641-->
+    <!--    Header Section:-->
+
+    <!--    Texts ->-->
+    <!--    Light = #FFFFFF-->
+    <!--    Dark = #E7EAEF-->
+
+    <!--    Icon Tints ->-->
+    <!--    Light = #FFFFFF-->
+    <!--    Dark = #E7EAEF-->
+
+
+    <!--    Transactions Section:-->
+
+    <!--    Background ->-->
+    <!--    Light = #FFFFFF-->
+    <!--    Dark = #1B2028-->
+
+
+    <!--    Title Texts ->-->
+    <!--    Light = #253035-->
+    <!--    Dark = #E7EAEF-->
+
+
+    <!--    Description Texts ->-->
+    <!--    Light = #718E9C-->
+    <!--    Dark = #9FABBE-->
+
+
+    <!--    Price Texts ->-->
+    <!--    Light = #253035-->
+    <!--    Dark = #E7EAEF-->
+
+
+    <!--    Highlights Tint ->-->
+    <!--    Light = #C9EDE8-->
+    <!--    Dark = #154641-->

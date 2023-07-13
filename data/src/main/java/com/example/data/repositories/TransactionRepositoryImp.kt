@@ -19,7 +19,7 @@ class TransactionRepositoryImp() : TransactionRepository {
             date = "دوشنبه ۲ تیر ۱۶:۳۰ ۹۹",
             amount = "۱۲,۳۴۴۵",
             amountType = AmountType.Deposit,
-            icon = "",
+            icon = "remittance_transfer",
             currency = "ریال"
         )
         val transactionModel2 = TransactionModel(
@@ -129,6 +129,12 @@ class TransactionRepositoryImp() : TransactionRepository {
         transactions.add(transactionModel4)
         transactions.add(transactionModel5)
         transactions.add(transactionModel6)
+        transactions.add(transactionModel7)
+        transactions.add(transactionModel8)
+        transactions.add(transactionModel9)
+        transactions.add(transactionModel10)
+        transactions.add(transactionModel11)
+        transactions.add(transactionModel12)
         transactions.add(transactionModel7)
         transactions.add(transactionModel8)
         transactions.add(transactionModel9)

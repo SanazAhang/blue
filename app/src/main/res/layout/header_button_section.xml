@@ -6,7 +6,7 @@
 
     <TextView
         android:id="@+id/charge_account"
-        style="@style/headerSection"
+        style="@style/headerSectionBottonText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginVertical="@dimen/margin4dp"
@@ -18,7 +18,7 @@
 
     <TextView
         android:id="@+id/box"
-        style="@style/headerSection"
+        style="@style/headerSectionBottonText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginVertical="@dimen/margin4dp"
@@ -30,7 +30,7 @@
 
     <TextView
         android:id="@+id/financial_management"
-        style="@style/headerSection"
+        style="@style/headerSectionBottonText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginVertical="@dimen/margin4dp"

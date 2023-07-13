@@ -18,44 +18,40 @@
         android:background="@drawable/corner_shape"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingBottom="88dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <ImageView
-                android:id="@+id/filterImage"
-                android:layout_width="@dimen/widthHeaderButtonSize"
-                android:layout_height="@dimen/heightHeaderButtonSize"
-                android:layout_gravity="center|end"
-                android:background="@android:color/transparent"
-                android:contentDescription="TODO"
-                android:src="@drawable/download"
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="60dp"
+                android:layout_height="5dp"
+                android:layout_marginTop="@dimen/margin8dp"
+                app:cardCornerRadius="4dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/textResult"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|start"
-                android:text="0 results"
-                android:textColor="#2B2B2B"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="@+id/filterImage"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/description_icon_back_ground_dark" />
+            </androidx.cardview.widget.CardView>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerview"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:layout_marginTop="@dimen/margin24dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/filterImage"
-                tools:itemCount="50"/>
+                app:layout_constraintTop_toBottomOf="@+id/cardView2"
+                tools:itemCount="50"
+                android:paddingBottom="88dp"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 

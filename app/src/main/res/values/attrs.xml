@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <attr name="backDropImage" format="reference"/>
-    <attr name="iconColor" format="reference"/>
-    <attr name="headerTextColor" format="reference"/>
-    <attr name="headerFontFamily" format="reference"/>
-    <attr name="frontBackgroundColor" format="reference"/>
+    <attr name="backDropImage" format="reference" />
+
+    //HeaderSection
+    <attr name="iconColor" format="reference" />
+    <attr name="headerTextColor" format="reference" />
+    <attr name="headerFontFamily" format="reference" />
+    <attr name="frontBackgroundColor" format="reference" />
+
+    //DescriptionSection
+    <attr name="descriptionItemBackgroundColor" format="reference" />
+    <attr name="descriptionItemTitleTextColor" format="reference" />
+    <attr name="descriptionItemTextColor" format="reference" />
+    <attr name="descriptionItemPriceTextColor" format="reference" />
+    <attr name="descriptionItemHighlight" format="reference" />
+    <attr name="descriptionBackIconColor" format="reference" />
 </resources>

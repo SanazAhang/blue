@@ -50,33 +50,9 @@ class TransactionsFragment : BottomSheetDialogFragment(), OnBottomSheetCallbacks
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.textResult.setOnClickListener {
-            (activity as MainActivity).closeBottomSheet()
-        }
 
-        binding.filterImage.setOnClickListener {
-            if (currentState == BottomSheetBehavior.STATE_EXPANDED)
-                (activity as MainActivity).closeBottomSheet()
-            else
-                (activity as MainActivity).openBottomSheet()
-        }
         setUpRecyclerView()
         observeData()
-    }
-
-    override fun onStateChanged(bottomSheet: View, newState: Int) {
-        currentState = newState
-        when (newState) {
-            BottomSheetBehavior.STATE_EXPANDED -> {
-                binding.textResult.text = "0 results"
-                binding.filterImage.setImageResource(R.drawable.add)
-            }
-
-            BottomSheetBehavior.STATE_COLLAPSED -> {
-                binding.textResult.text = "see the resualt"
-                binding.filterImage.setImageResource(R.drawable.deposit_gift)
-            }
-        }
     }
 
     private fun setUpRecyclerView() {
@@ -92,6 +68,10 @@ class TransactionsFragment : BottomSheetDialogFragment(), OnBottomSheetCallbacks
     private fun onGetTransaction(transactions: ArrayList<TransactionModel>) {
         adapter = TransactionAdapter(transactions)
         recyclerView.adapter = adapter
+    }
+
+    override fun onStateChanged(bottomSheet: View, newState: Int) {
+
     }
 
 }
