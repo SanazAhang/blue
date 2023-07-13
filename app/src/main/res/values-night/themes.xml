@@ -9,7 +9,7 @@
         <item name="backDropImage">@drawable/header_dark</item>
 
         //HeaderSection
-        <item name="iconColor">@color/header_section_dark</item>
+        <item name="iconColor">@color/blue</item>
         <item name="headerTextColor">@color/header_section_dark</item>
         <item name="frontBackgroundColor">@color/description_item_dark</item>
 

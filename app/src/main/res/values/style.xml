@@ -8,7 +8,6 @@
 
     <style name="circleButtonTransParent" parent="ShapeAppearanceOverlay.Material3.Button">
         <item name="android:backgroundTint">@color/white_with_transparent</item>
-        <item name="android:drawableTint">?attr/iconColor</item>
     </style>
 
     <style name="circleButton" parent="ShapeAppearanceOverlay.Material3.Button">
