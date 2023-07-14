@@ -3,6 +3,26 @@
     <style name="Base.Theme.Blue" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="backDropImage">@drawable/header_light</item>
+
+        //HeaderSection
+        <item name="iconColor">@color/white</item>
+        <item name="headerTextColor">@color/white</item>
+        <item name="frontBackgroundColor">@color/white</item>
+
+        //DescriptionSection
+        <item name="descriptionItemBackgroundColor">@color/white</item>
+        <item name="descriptionItemTitleTextColor">@color/description_title_text_color_Light</item>
+        <item name="descriptionItemTextColor">@color/description_text_color_Light</item>
+        <item name="descriptionItemPriceTextColor">@color/description_price_text_color_Light</item>
+        <item name="descriptionItemHighlight">@color/description_highlights_tint_color_Light</item>
+
+        //descriptionIconBackGround
+        <item name="descriptionBackIconColor">@color/description_icon_back_ground_light</item>
+
     </style>
 
     <style name="Theme.Blue" parent="Base.Theme.Blue" />
