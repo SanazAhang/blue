@@ -30,6 +30,9 @@
     <color name="description_icon_back_ground_light">#577A9ACF</color>
     <color name="description_icon_back_ground_dark">#5713356C</color>
 
+    //shimmer
+    <color name="shimmer_light_gray">#B3B3B3</color>
+
 </resources>
 
 

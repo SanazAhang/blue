@@ -3,6 +3,7 @@ package com.example.blue.view
 import android.content.Context
 import android.content.res.Resources
 import android.content.res.TypedArray
+import android.graphics.Color
 import android.graphics.drawable.Drawable
 import android.util.TypedValue
 import android.view.LayoutInflater
@@ -44,7 +45,10 @@ class TransactionAdapter(val transactions: List<TransactionModel>) :
                         binding.icon.setBackgroundColor(getColorId())
                     }
 
-                    else -> return
+                    else -> {
+                        binding.priceTextView.setBackgroundColor(Color.TRANSPARENT)
+                        binding.icon.setBackgroundColor(Color.TRANSPARENT)
+                    }
                 }
             }
         }

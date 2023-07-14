@@ -6,12 +6,12 @@ import android.view.WindowManager
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.ReportFragment.Companion.reportFragment
 import com.example.blue.R
 import com.example.blue.databinding.ActivityMainBinding
 import com.example.blue.util.OnBottomSheetCallbacks
 import com.example.blue.viewmodels.TransactionViewModel
 import com.google.android.material.bottomsheet.BottomSheetBehavior
+import com.google.android.material.bottomsheet.BottomSheetBehavior.STATE_COLLAPSED
 import dagger.hilt.android.AndroidEntryPoint
 
 
@@ -37,10 +37,6 @@ class MainActivity : AppCompatActivity() {
         viewModel.getBalance()
         observeData()
         configureBackdrop()
-        val display = windowManager.defaultDisplay
-        val height = display.height - binding.relativeLayout.height
-        Toast.makeText(this, "*****$height", Toast.LENGTH_LONG).show()
-        binding.transactionFragment.minimumHeight = height - 400
     }
 
 
@@ -49,11 +45,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun closeBottomSheet() {
-        mBottomSheetBehavior?.state = BottomSheetBehavior.STATE_COLLAPSED
-    }
+        mBottomSheetBehavior?.state = STATE_COLLAPSED
 
-    fun openBottomSheet() {
-        mBottomSheetBehavior?.state = BottomSheetBehavior.STATE_EXPANDED
     }
 
     private var mBottomSheetBehavior: BottomSheetBehavior<View?>? = null
@@ -68,12 +61,22 @@ class MainActivity : AppCompatActivity() {
                     override fun onSlide(bottomSheet: View, slideOffset: Float) {}
 
                     override fun onStateChanged(bottomSheet: View, newState: Int) {
+                        if (newState == STATE_COLLAPSED) {
+                            val heightOfFragment = fragment.view?.measuredHeight
+                            val heightOfHeaderSection = binding.relativeLayout.measuredHeight
+                            val heightOfToolbar = binding.toolBar.root.measuredHeight
+                            if (heightOfFragment != null) {
+                                mBottomSheetBehavior?.peekHeight =
+                                    (heightOfFragment - heightOfHeaderSection + heightOfToolbar + 10)
+                            }
+                        }
+
                         listener?.onStateChanged(bottomSheet, newState)
+
                     }
                 })
 
-                bottomSheet.state = BottomSheetBehavior.STATE_COLLAPSED
-//                mBottomSheetBehavior?.peekHeight = height
+                bottomSheet.state = STATE_COLLAPSED
                 mBottomSheetBehavior = bottomSheet
             }
         }

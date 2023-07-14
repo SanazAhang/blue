@@ -80,7 +80,7 @@
 
     </RelativeLayout>
 
-    <androidx.fragment.app.FragmentContainerView
+    <fragment
         android:id="@+id/transaction_fragment"
         android:name="com.example.blue.view.TransactionsFragment"
         android:layout_width="match_parent"
